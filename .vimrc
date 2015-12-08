@@ -1,4 +1,4 @@
-set nocompatible | filetype indent plugin on | syn on 
+set nocompatible | filetype indent plugin on | syn on
 set backspace=indent,eol,start 
 
 fun! SetupVAM()
@@ -54,5 +54,5 @@ call vam#Scripts(scripts, {'tag_regex': '.*'})
 
 " Plugin config
 syntax enable
-set background=dark
-colorscheme solarized 
+"set background=dark
+"colorscheme twilight
