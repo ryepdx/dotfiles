@@ -43,4 +43,15 @@ set number
 set completeopt-=preview
 set textwidth=80
 
-call vam#Scripts('/home/ryepdx/.vim-scripts', {'tag_regex': '.*'})
+" Load VAM plugins
+let scripts=[]
+
+"call add(scripts, {'name': 'github:daylerees/colour-schemes', 'addon-info': {'runtimepath': 'vim'} })
+call add(scripts, {'name': 'rainbow_parentheses'})
+call add(scripts, {'name': 'rust'})
+call add(scripts, {'name': 'YouCompleteMe'})
+
+call vam#Scripts(scripts, {'tag_regex': '.*'})
+
+" Plugin config
+colorscheme mud 
