@@ -46,7 +46,6 @@ set textwidth=80
 " Load VAM plugins
 let scripts=[]
 
-"call add(scripts, {'name': 'github:daylerees/colour-schemes', 'addon-info': {'runtimepath': 'vim'} })
 call add(scripts, {'name': 'rainbow_parentheses'})
 call add(scripts, {'name': 'rust'})
 call add(scripts, {'name': 'YouCompleteMe'})
@@ -54,4 +53,6 @@ call add(scripts, {'name': 'YouCompleteMe'})
 call vam#Scripts(scripts, {'tag_regex': '.*'})
 
 " Plugin config
-colorscheme mud 
+syntax enable
+set background=dark
+colorscheme solarized 
