@@ -67,3 +67,6 @@ call vam#Scripts(scripts, {'tag_regex': '.*'})
 syntax enable
 "set background=dark
 "colorscheme twilight
+
+" Nexus Development
+autocmd BufWritePost /root/devenv/dapple/* silent !/root/devenv/dapple/groc.sh
