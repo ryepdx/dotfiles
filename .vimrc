@@ -23,6 +23,19 @@ fun! SetupVAM()
 endfun
 call SetupVAM()
 
+fun! Tab4()
+  set tabstop=4
+  set softtabstop=4
+  set shiftwidth=4
+endfun
+
+fun! Tab2()
+  set tabstop=2
+  set softtabstop=2
+  set shiftwidth=2
+endfun
+
+call Tab4()
 
 highlight LineNr ctermfg=grey ctermbg=black
 nnoremap th  :tabfirst<CR>
@@ -36,8 +49,6 @@ nnoremap td  :tabclose<CR>
 syntax on
 filetype plugin indent on
 set runtimepath+=/path/to/vam
-set tabstop=4
-set softtabstop=4
 set expandtab
 set number
 set completeopt-=preview
