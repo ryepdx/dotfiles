@@ -68,5 +68,6 @@ syntax enable
 "set background=dark
 "colorscheme twilight
 
-" Nexus Development
-autocmd BufWritePost /root/devenv/dapple/* silent !/root/devenv/dapple/groc.sh
+" Emmet
+let g:user_emmet_leader_key='<C-Z>'
+let g:user_emmet_settings=webapi#json#decode(join(readfile(expand('~/.snippets_custom.json')), "\n"))
