@@ -54,3 +54,6 @@ set textwidth=80
 syntax enable
 "set background=dark
 "colorscheme twilight
+
+" Strip trailing whitespace before saving
+autocmd BufWritePre * :%s/\s\+$//e
