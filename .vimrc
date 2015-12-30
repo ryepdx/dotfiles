@@ -9,7 +9,8 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger="<c-Space>"
+"let g:UltiSnipsExpandTrigger="<c-Space>"
+let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 let g:UltiSnipsSnippetsDir="/home/dev/.vim/bundle/vim-snippets/UltiSnips"
