@@ -18,7 +18,7 @@ call vundle#end()
 
 filetype plugin indent on
 syn on
-set backspace=indent,eol,start 
+set backspace=indent,eol,start
 
 fun! Tab4()
   set tabstop=4
