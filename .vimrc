@@ -58,3 +58,8 @@ syntax enable
 
 " Strip trailing whitespace before saving
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Autosave when leaving insert mode.
+set updatetime=4000
+autocmd InsertLeave <buffer> update
+au! CursorHoldI,CursorHold <buffer> silent! :wa
