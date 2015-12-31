@@ -1,0 +1,27 @@
+priority -60
+
+snippet ds "describe (synchronous) (Mocha)"
+describe("${1}", function () {${2}});
+endsnippet
+
+snippet da "describe (asynchronous) (Mocha)"
+describe("${1}", function (done) {${2}});
+endsnippet
+
+snippet its "it (synchronous) (Mocha)"
+it("${1}", function () {${2}});
+endsnippet
+
+snippet ita "it (asynchronous) (Mocha)"
+it("${1}", function (done) {${2}});
+endsnippet
+
+snippet b4e "beforeEach (Mocha)"
+beforeEach(function (done) {${1}});
+endsnippet
+
+snippet b4 "before (Mocha)"
+before(function (done) {${1}});
+endsnippet
+
+# vim:ft=snippets:
