@@ -9,6 +9,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'scrooloose/syntastic'
 "let g:UltiSnipsExpandTrigger="<c-Space>"
 let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -63,3 +64,13 @@ autocmd BufWritePre * :%s/\s\+$//e
 set updatetime=4000
 autocmd InsertLeave <buffer> update
 au! CursorHoldI,CursorHold <buffer> silent! :wa
+
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
