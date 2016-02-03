@@ -34,7 +34,7 @@ fun! Tab2()
   set shiftwidth=2
 endfun
 
-call Tab4()
+call Tab2()
 
 highlight LineNr ctermfg=grey ctermbg=black
 nnoremap th  :tabfirst<CR>
@@ -74,3 +74,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Semistandard
+let g:syntastic_javascript_checkers=['standard']
+let g:syntastic_javascript_standard_exec = 'semistandard'
